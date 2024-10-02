@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    
+<h1>mes 5 pays  préferer </h1>
+<div class="maroc">
+<h2>maroc</h2>
+ <img src="images/maroc.jpg"  alt="">
+    <p>Morocco, officially the Kingdom of Morocco, is a country in the Maghreb region of North Africa. It overlooks the Mediterranean Sea to the north and the Atlantic Ocean to the west, and has land borders with Algeria to the east, and the disputed territory of Western Sahara to the south. Morocco also claims the Spanish exclaves of Ceuta, Melilla and Peñón de Vélez de la Gomera, and several small Spanish-controlled islands off its coast.[18] It has a population of approximately 37 million. Islam is both the official and predominant religion, while Arabic and Berber are the official languages. Additionally, French and the Moroccan dialect of Arabic are widely spoken. The culture of Morocco is a mix of Arab, Berber, African and European cultures. Its capital is Rabat, while its largest city is Casablanca. </p>
+    <ul>
+        <li>culture</li>
+        <li>payasage</li>
+        <li>monimoment</li>
+        <table>
+            <tr>
+                <th>capital</th>
+                <th>le roi</th>
+                <th>surface</th>
+            </tr>
+            <tr>
+                <td>rabat</td>
+                <td>mohamed 6</td>
+                <td>446,550 km²</td>
+            </tr>
+        </table>
+        <button
+        id = button  onclick = "addNewLike()" ;
+            >likes</button>
+        <p id="likes-maroc">0 like </p>      
+    </ul>
+</div>
+<div class="germany">
+<h2>germany</h2>
+<img src="/images/germany.jpg" alt="">
+<p>is a country in Central Europe. It lies between the Baltic and North Sea to the north and the Alps to the south. Its sixteen constituent states have a total population of over 82 million in an area of 357,569 km2 (138,058 sq mi), making it the most populous member state of the European Union. It borders Denmark to the north, Poland and Czechia to the east, Austria and Switzerland to the south, and France, Luxembourg, Belgium, and the Netherlands to the west. The nation's capital and most populous city is Berlin and its main financial centre is Frankfurt; the largest urban area is the Ruhr.</p>
+<ul>
+    <li>Culture riche</li>
+    <li>Paysages variés</li>
+    <li>Histoire fascinante</li>
+</ul>
+<table>
+    <tr>
+    <th>capital</th>
+    <th>le roi</th>
+    <th>surface</th>
+</tr>
+<tr>
+    <th>Berlin</th>
+    <th>--</th>
+    <th>357,600 km2</th>
+</tr>
+</table>
+<button
+id = button  onclick = "addNewLike1()" ;
+    >likes</button>
+<p id="likes-germany">0 like </p>
+</div>
+<div class="albania">
+<h2>albania</h2>
+<img src="images/albanie.jpg" alt="">
+<p>Albania, country in southern Europe, located in the western part of the Balkan Peninsula on the Strait of Otranto, the southern entrance to the Adriatic Sea. The capital city is Tirana (Tiranë).</p>
+<ul>
+    <li>payasage</li>
+    <li>le languages</li>
+    <li></li>
+</ul>
+<table>
+    <tr>
+    <th>capital</th>
+    <th>le roi</th>
+    <th>surface</th>
+</tr>
+<tr>
+    <th>tirana</th>
+    <th>--</th>
+    <th>28.748</th>
+</tr>
+</table>
+<button
+id = button  onclick = "addNewLike2()" ;
+    >likes</button>
+<p id="likes-albania">0 like </p>
+</div>
+<div class="Algeria">
+<h2>Algeria</h2>
+<img src="images/algerie.jpg" alt="">
+<p>Algeria, officially the People's Democratic Republic of Algeria, is a country in the Maghreb region of North Africa. </p>
+<ul>
+    <li>Langues officielles : Arabe et Amazigh</li>
+    <li>Monnaie : Dinar algérien</li>
+    <li>Villes principales : Alger, Oran, Constantine, Annaba</li>
+</ul>
+<table>
+    <tr>
+    <th>capital</th>
+    <th>population</th>
+    <th>surface</th>
+</tr>
+<tr>
+    <th>Alger</th>
+    <th>Environ 44 millions</th>
+    <th>2,381,741 km</th>
+</tr>
+</table>
+<button
+id = button  onclick = "addNewLike3()" ;
+    >likes</button>
+<p id="likes-algeria">0 like </p>
+</div>
+<div class="tunisie">
+<h2>tunisie</h2>
+<img src="images/tunisie.jpg" alt="">
+<p> Tunisia, officially the Republic of Tunisia, is the northernmost country in Africa. </p>
+<ul>
+    <li>Langue officielle : Arabe</li>
+    <li>Monnaie : Dinar tunisien (TND)</li>
+    <li>Villes principales : Tunis, Sousse, Kairouan, Hammamet</li>
+</ul>
+<table>
+    <tr>
+    <th>capital</th>
+    <th>population</th>
+    <th>surface</th>
+</tr>
+<tr>
+    <td>Tunis</td>
+    <td>Environ 12 millions</td>
+    <td>163,610</td>
+</tr>
+</table>
+<button
+id = button  onclick = "addNewLike4()" ;
+    >likes</button>
+<p id="likes-tunisie">0 like </p>
+</div>
+<script>
+    let likesMaroc =  document.getElementById("likes-maroc").innerText;
+    let marocLikesContent = likesMaroc
+    
+    let compteur = 0
+     function addNewLike(){ 
+         compteur = ++compteur ;
+        likesMaroc = document.getElementById("likes-maroc").innerText =`${compteur} likes`;
+        
+     }
+     let compteur1 = 0
+     function addNewLike1(){
+        compteur1= ++compteur1
+        likesgermany= document.getElementById("likes-germany").innerText = `${compteur1} likes`;
+        
+    }
+    let compteur2 = 0
+     function addNewLike2(){
+        compteur2 = ++compteur2
+        likesalbania= document.getElementById("likes-albania").innerText = `${compteur2} likes`;   
+    }
+    let compteur3 = 0
+     function addNewLike3(){
+        compteur3 = ++compteur3
+        likesalgeria= document.getElementById("likes-algeria").innerText = `${compteur3} likes`;
+    
+    }
+    let compteur4 = 0
+     function addNewLike4(){
+        compteur4 = ++compteur4
+        likestunisie= document.getElementById("likes-tunisie").innerText = `${compteu4r} likes`;
+        
+    }
+
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
